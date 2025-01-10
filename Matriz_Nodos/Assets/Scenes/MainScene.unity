@@ -268,7 +268,7 @@ MonoBehaviour:
   rows: 4
   cols: 4
   movingImg: {fileID: 741576056}
-  moveSpeed: 2
+  moveSpeed: 250
 --- !u!1 &266720047
 GameObject:
   m_ObjectHideFlags: 0

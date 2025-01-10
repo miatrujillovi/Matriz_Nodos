@@ -168,7 +168,8 @@ public class ButtonSelector : MonoBehaviour
 
             while ((movingImg.position - targetPosition).magnitude > 0.1f)
             {
-                movingImg.position = Vector3.MoveTowards(movingImg.position, targetPosition, moveSpeed * Time.deltaTime);
+                float step = moveSpeed * Time.deltaTime;
+                movingImg.position = Vector3.MoveTowards(movingImg.position, targetPosition, step);
                 yield return null;
             }
 
