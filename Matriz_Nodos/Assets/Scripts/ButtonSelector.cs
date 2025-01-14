@@ -161,6 +161,7 @@ public class ButtonSelector : MonoBehaviour
     IEnumerator MoveImage(List<Button> path)
     {
         movingImg.gameObject.SetActive(true);
+        movingImg.position = path[0].transform.position;
 
         foreach (Button button in path)
         {
